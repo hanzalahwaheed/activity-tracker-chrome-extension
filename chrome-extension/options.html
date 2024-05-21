@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Webpage Logger Options</title>
+    <style>
+      body {
+        font-family: "Droid Sans", sans-serif;
+        color: #333;
+      }
+      input {
+        transition: border-color 0.3s;
+        border: 1px solid #ccc;
+        padding: 0.2em;
+      }
+      input:focus {
+        border: 1px solid #66afe9;
+        outline: none;
+      }
+      .logo {
+        float: left;
+        margin-right: 1em;
+      }
+      h2 {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0.1em;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 0.5em;
+        margin-bottom: 1em;
+      }
+      main {
+        padding-left: 1em;
+      }
+      a {
+        text-decoration: none;
+        color: #428bca;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: #2a6496;
+      }
+      hr {
+        border: none;
+        border-bottom: 1px solid #ccc;
+      }
+      form {
+        display: table;
+        margin-left: 2em;
+      }
+      em.info {
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="icon48.png" />
+      <h2>Browsing Activity Tracker 0.1</h2>
+      <p><em>By</em> <a href="mailto:thibaut@horel.org">Thibaut Horel</a></p>
+    </header>
+    <main>
+      <p>
+        Notify a callback URL whenever a webpage is loaded or displayed.
+        <a href="https://github.com/Thibauth/browsing-activity-tracker"
+          >Read more.</a
+        >
+      </p>
+      <h3>Options</h3>
+      <p>
+        <label for="callback"> Callback URL</label>:
+        <input id="callback" type="text" spellcheck="false" /><br />
+        <em class="info">URL to be notified.</em>
+      </p>
+      <hr />
+      <p>
+        <label for="key"> Browser Key:</label>
+        <input id="key" type="text" spellcheck="false" /><br />
+        <em class="info">Key to identify the browser.</em>
+      </p>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "Activity Tracker",
+  "author": "Hanzalah Waheed",
+  "version": "0.0.1",
+  "description": "Notify a callback URL whenever a webpage is loaded or displayed.",
+  "homepage_url": "https://github.com/Thibauth/browsing-activity-tracker",
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "bg.js"
+  },
+  "permissions": ["tabs", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "options_page": "options.html"
+}
